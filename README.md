@@ -18,6 +18,9 @@ Welcome to the **Machine Learning Lab Exercises** repository! This repository co
 10. [Gaussian Mixture Models (GMM)](#10-gaussian-mixture-models-gmm)
 11. [Neural Network Applications](#11-neural-network-applications)
 12. [Time Series Forecasting with ARIMA](#12-time-series-forecasting-with-arima)
+13. [How to Use](#how-to-use)
+14. [License](#license)
+15. [Author](#author)
 
 ---
 
@@ -155,28 +158,64 @@ Welcome to the **Machine Learning Lab Exercises** repository! This repository co
 
 ---
 
-## How to Use
-1. Clone the repository:
+### 13. How to Use
+
+#### Using Visual Studio Code
+
+1. Open Visual Studio Code and navigate to the folder containing this repository.
+2. Install the Python extension for VS Code if not already installed.
+3. Open a terminal within VS Code and create a virtual environment:
+   ```bash
+   python -m venv ml_env
+   ml_env\Scripts\activate  # On Windows
+   source ml_env/bin/activate  # On macOS/Linux
+   ```
+4. Install the required packages:
+   ```bash
+   pip install -r requirements.txt
+   ```
+5. Open any `.ipynb` file and use the Jupyter Notebook extension in VS Code to run the experiments.
+
+#### Using Google Colab
+
+1. Go to [Google Colab](https://colab.research.google.com/).
+2. Upload the desired `.ipynb` file by clicking on **File > Upload Notebook**.
+3. Ensure all required libraries are installed in the Colab environment by running:
+   ```python
+   !pip install numpy pandas scikit-learn matplotlib seaborn tensorflow torch statsmodels
+   ```
+4. Run the cells sequentially to execute the experiments.
+
+#### Running Locally
+
+1. Clone the repository to your local system:
    ```bash
    git clone https://github.com/ARAVINDAN20/Machine-learning-lab-exercises.git
    ```
-
 2. Navigate to the repository directory:
    ```bash
    cd Machine-learning-lab-exercises
    ```
-
-3. Open individual `.ipynb` files to explore each experiment.
-
-4. Run the files in Jupyter Notebook or Google Colab to reproduce results.
+3. Create a virtual environment and install dependencies:
+   ```bash
+   python -m venv ml_env
+   ml_env\Scripts\activate  # On Windows
+   source ml_env/bin/activate  # On macOS/Linux
+   pip install -r requirements.txt
+   ```
+4. Open the Jupyter Notebook server:
+   ```bash
+   jupyter notebook
+   ```
+5. Run the `.ipynb` files in your browser.
 
 ---
 
-## License
+### 14. License
 This repository is licensed under the MIT License.
 
 ---
 
-## Author
+### 15. Author
 [Aravindan](https://github.com/ARAVINDAN20)
 
